@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Bhuvan — Aspiring Biomedical Engineer | Portfolio showcasing projects, skills, and experience in optical physics, medical diagnostics, and Raman Spectroscopy.">
+  <meta name="keywords" content="Bhuvan, Biomedical Engineer, Portfolio, Raman Spectroscopy, MATLAB, Medical Diagnostics">
+  <meta name="author" content="Bhuvan">
+  <title>BHUVAN | Biomedical Engineer Portfolio</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Particle Background -->
+  <canvas id="particle-canvas"></canvas>
+
+  <!-- Navigation -->
+  <nav class="navbar" id="navbar">
+    <a href="#home" class="nav-logo glitch">BHUVAN<span>.dev</span></a>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#home" class="active">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#certifications">Certs</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- Page Container -->
+  <div class="page-container">
+
+    <!-- ==================== HOME PAGE ==================== -->
+    <div class="page active" id="page-home">
+      <section class="hero">
+        <div class="hero-content">
+          <div class="hero-photo-wrapper">
+            <img src="assets/profile.jpeg" alt="Bhuvan" class="hero-photo">
+            <div class="hero-photo-ring"></div>
+          </div>
+          <div class="hero-text">
+            <h1 class="glitch">I'm <span class="name">BHUVAN</span></h1>
+            <p class="subtitle">// ASPIRING BIOMEDICAL ENGINEER</p>
+            <div class="typing-text"></div>
+            <div class="hero-buttons">
+              <button class="btn" onclick="openResume()" id="btn-view-resume">
+                &#128196; VIEW RESUME
+              </button>
+              <a href="RESUME.png" download="Bhuvan_Resume.png" class="btn btn-filled" id="btn-download-resume">
+                &#11015; DOWNLOAD RESUME
+              </a>
+              <a href="#contact" class="btn" id="btn-contact-hero">
+                &#9993; CONTACT ME
+              </a>
+            </div>
+            <div class="status-bar">
+              <span class="dot"></span>
+              <span>STATUS: Available for Opportunities</span>
+              <span>|</span>
+              <span>LOCATION: Bangalore, KA</span>
+              <span>|</span>
+              <span>LEVEL: Final Year</span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- ==================== ABOUT PAGE ==================== -->
+    <div class="page" id="page-about">
+      <section class="section">
+        <div class="section-header">
+          <span class="section-tag">// player_profile</span>
+          <h2>About Me</h2>
+        </div>
+
+        <div class="about-grid reveal">
+          <div class="about-bio card">
+            <p>
+              Aspiring <strong>Biomedical Engineer</strong> (Class of 2027) from 
+              <strong>Sri Siddhartha Institute of Technology</strong>. Focused on the 
+              intersection of <strong>optical physics</strong> and <strong>medical diagnostics</strong>, 
+              with specific research and project experience in <strong>Raman Spectroscopy</strong>.
+            </p>
+            <br>
+            <p>
+              Skilled in <strong>medical instrumentation</strong> and <strong>analytical research</strong>, 
+              aiming to contribute to healthcare innovation and diagnostic precision. 
+              Experienced with hands-on internship at <strong>NIMHANS</strong> in biomedical 
+              engineering applications.
+            </p>
+          </div>
+          <div class="info-grid">
+            <div class="info-item">
+              <span class="icon">&#128100;</span>
+              <div>
+                <div class="label">Name</div>
+                <div class="value">Bhuvan</div>
+              </div>
+            </div>
+            <div class="info-item">
+              <span class="icon">&#127891;</span>
+              <div>
+                <div class="label">Degree</div>
+                <div class="value">B.E. Biomedical</div>
+              </div>
+            </div>
+            <div class="info-item">
+              <span class="icon">&#128205;</span>
+              <div>
+                <div class="label">Location</div>
+                <div class="value">Bangalore, KA</div>
+              </div>
+            </div>
+            <div class="info-item">
+              <span class="icon">&#128197;</span>
+              <div>
+                <div class="label">Graduation</div>
+                <div class="value">June 2027</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Skills / XP Bars -->
+        <div class="skills-section reveal" style="margin-top:2rem;">
+          <h3>&#127918; Core Competencies — XP Levels</h3>
+          <div class="about-grid">
+            <div>
+              <div class="skill-bar">
+                <div class="skill-info">
+                  <span class="skill-name">Raman Spectroscopy</span>
+                  <span class="skill-level">LVL 90</span>
+                </div>
+                <div class="bar-track"><div class="bar-fill" data-level="90"></div></div>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-info">
+                  <span class="skill-name">Fluorescence Imaging</span>
+                  <span class="skill-level">LVL 80</span>
+                </div>
+                <div class="bar-track"><div class="bar-fill" data-level="80"></div></div>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-info">
+                  <span class="skill-name">Microscopy</span>
+                  <span class="skill-level">LVL 75</span>
+                </div>
+                <div class="bar-track"><div class="bar-fill" data-level="75"></div></div>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-info">
+                  <span class="skill-name">Medical Instrumentation</span>
+                  <span class="skill-level">LVL 85</span>
+                </div>
+                <div class="bar-track"><div class="bar-fill" data-level="85"></div></div>
+              </div>
+            </div>
+            <div>
+              <div class="skill-bar">
+                <div class="skill-info">
+                  <span class="skill-name">MATLAB</span>
+                  <span class="skill-level">LVL 85</span>
+                </div>
+                <div class="bar-track"><div class="bar-fill" data-level="85"></div></div>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-info">
+                  <span class="skill-name">LabVIEW</span>
+                  <span class="skill-level">LVL 80</span>
+                </div>
+                <div class="bar-track"><div class="bar-fill" data-level="80"></div></div>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-info">
+                  <span class="skill-name">Python</span>
+                  <span class="skill-level">LVL 78</span>
+                </div>
+                <div class="bar-track"><div class="bar-fill" data-level="78"></div></div>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-info">
+                  <span class="skill-name">OriginPro</span>
+                  <span class="skill-level">LVL 70</span>
+                </div>
+                <div class="bar-track"><div class="bar-fill" data-level="70"></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Strengths -->
+        <div class="reveal">
+          <h3 style="font-family:var(--font-heading);font-size:1rem;letter-spacing:2px;color:var(--secondary);text-transform:uppercase;margin-bottom:1rem;">&#9889; Strengths</h3>
+          <div class="strengths-grid">
+            <div class="strength-item">
+              <div class="s-icon">&#128300;</div>
+              <div class="s-title">Analytical Problem Solving</div>
+            </div>
+            <div class="strength-item">
+              <div class="s-icon">&#128221;</div>
+              <div class="s-title">Technical Documentation</div>
+            </div>
+            <div class="strength-item">
+              <div class="s-icon">&#129309;</div>
+              <div class="s-title">Cross-functional Collaboration</div>
+            </div>
+            <div class="strength-item">
+              <div class="s-icon">&#128218;</div>
+              <div class="s-title">Research Methodology</div>
+            </div>
+          </div>
+        </div>
+
+      </section>
+    </div>
+
+    <!-- ==================== PROJECTS PAGE ==================== -->
+    <div class="page" id="page-projects">
+      <section class="section">
+        <div class="section-header">
+          <span class="section-tag">// quest_log</span>
+          <h2>Projects & Experience</h2>
+        </div>
+
+        <div class="projects-grid">
+          <!-- Project 1 -->
+          <div class="card project-card reveal">
+            <div class="quest-badge">&#128300;</div>
+            <div>
+              <h3>Diagnostic Applications of Raman Spectroscopy</h3>
+              <div class="project-type">&#9876; ACADEMIC PROJECT — Main Quest</div>
+              <p>Investigated the use of Raman Spectroscopy for molecular "fingerprinting" and chemical analysis of biological samples.</p>
+              <ul>
+                <li>Analyzed inelastic scattering of light to identify molecular vibrational modes, focusing on potential applications in early-stage cancer detection</li>
+                <li>Utilized data processing tools to manage signal-to-noise ratios and filter fluorescence interference in spectral data</li>
+              </ul>
+              <div class="project-tags">
+                <span class="tag">Raman Spectroscopy</span>
+                <span class="tag">Cancer Detection</span>
+                <span class="tag">Signal Processing</span>
+                <span class="tag">MATLAB</span>
+                <span class="tag">OriginPro</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Internship -->
+          <div class="card project-card reveal">
+            <div class="quest-badge">&#127979;</div>
+            <div>
+              <h3>NIMHANS — Biomedical Engineering Intern</h3>
+              <div class="project-type">&#128640; INTERNSHIP — Epic Quest &nbsp;|&nbsp; June 2025 – August 2025</div>
+              <p>National Institute of Mental Health and Neurosciences, Bangalore, Karnataka</p>
+              <ul>
+                <li>Shadowed senior engineers in the maintenance of high-end diagnostic imaging and analytical tools within the Neuropathology department</li>
+                <li>Gained hands-on exposure to the calibration of optical sensors and patient monitoring systems used in critical care</li>
+                <li>Assisted in documenting equipment performance logs and ensuring strict adherence to hospital safety compliance checks</li>
+              </ul>
+              <div class="project-tags">
+                <span class="tag">Diagnostic Imaging</span>
+                <span class="tag">Optical Sensors</span>
+                <span class="tag">Neuropathology</span>
+                <span class="tag">Calibration</span>
+                <span class="tag">Safety Compliance</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- ==================== EDUCATION PAGE ==================== -->
+    <div class="page" id="page-education">
+      <section class="section">
+        <div class="section-header">
+          <span class="section-tag">// skill_tree</span>
+          <h2>Education</h2>
+        </div>
+
+        <div class="timeline reveal">
+          <div class="timeline-item card">
+            <div class="timeline-dot"></div>
+            <h3>B.E. in Biomedical Engineering</h3>
+            <div class="timeline-sub">&#127979; Sri Siddhartha Institute of Technology (SSIT) &nbsp;|&nbsp; Expected June 2027</div>
+            <p>
+              Focused on the application of spectroscopic techniques for non-invasive medical diagnostics. 
+              Building expertise at the intersection of optical physics and healthcare innovation.
+            </p>
+            <div class="coursework-chips" style="margin-top:1rem;">
+              <span class="chip">Biomedical Optics</span>
+              <span class="chip">Analytical Instrumentation</span>
+              <span class="chip">Medical Imaging</span>
+              <span class="chip">Signal Processing</span>
+              <span class="chip">Bio-materials</span>
+            </div>
+          </div>
+
+          <div class="timeline-item card">
+            <div class="timeline-dot"></div>
+            <h3>Academic Focus Areas</h3>
+            <div class="timeline-sub">&#128202; Research & Specialization</div>
+            <p>
+              Application of spectroscopic techniques for non-invasive medical diagnostics. 
+              Hands-on experience with Raman Spectroscopy, fluorescence imaging, and 
+              medical instrumentation systems.
+            </p>
+          </div>
+
+          <div class="timeline-item card">
+            <div class="timeline-dot"></div>
+            <h3>Regulatory Knowledge</h3>
+            <div class="timeline-sub">&#128203; Compliance & Standards</div>
+            <p>
+              Understanding of Medical Device Safety Standards and ISO protocols. 
+              Familiar with hospital safety compliance, equipment performance documentation, 
+              and bio-waste management best practices.
+            </p>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- ==================== CERTIFICATIONS PAGE ==================== -->
+    <div class="page" id="page-certifications">
+      <section class="section">
+        <div class="section-header">
+          <span class="section-tag">// achievements_unlocked</span>
+          <h2>Certifications</h2>
+        </div>
+
+        <div class="certs-grid">
+          <div class="card cert-card reveal">
+            <div class="cert-icon">&#127942;</div>
+            <h3>Advanced Optical Spectroscopy</h3>
+            <div class="cert-issuer">NPTEL / University Workshop</div>
+            <button class="btn" onclick="viewCertificate('Advanced Optical Spectroscopy')" id="btn-cert-1">
+              &#128065; VIEW CERTIFICATE
+            </button>
+          </div>
+
+          <div class="card cert-card reveal">
+            <div class="cert-icon">&#128187;</div>
+            <h3>Medical Image Processing using MATLAB</h3>
+            <div class="cert-issuer">MathWorks / Coursera</div>
+            <button class="btn" onclick="viewCertificate('Medical Image Processing using MATLAB')" id="btn-cert-2">
+              &#128065; VIEW CERTIFICATE
+            </button>
+          </div>
+
+          <div class="card cert-card reveal">
+            <div class="cert-icon">&#129520;</div>
+            <h3>Certified Biomedical Equipment Technician (CBET)</h3>
+            <div class="cert-issuer">Candidate</div>
+            <button class="btn" onclick="viewCertificate('CBET')" id="btn-cert-3">
+              &#128065; VIEW CERTIFICATE
+            </button>
+          </div>
+
+          <div class="card cert-card reveal">
+            <div class="cert-icon">&#9883;</div>
+            <h3>Hospital Safety and Bio-waste Management</h3>
+            <div class="cert-issuer">Professional Seminar</div>
+            <button class="btn" onclick="viewCertificate('Hospital Safety and Bio-waste Management')" id="btn-cert-4">
+              &#128065; VIEW CERTIFICATE
+            </button>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- ==================== CONTACT PAGE ==================== -->
+    <div class="page" id="page-contact">
+      <section class="section">
+        <div class="section-header">
+          <span class="section-tag">// connect</span>
+          <h2>Contact Me</h2>
+        </div>
+
+        <div class="contact-grid reveal">
+          <a href="tel:+919019247088" class="contact-item" id="contact-phone">
+            <div class="c-icon">&#128222;</div>
+            <div>
+              <div class="c-label">Phone</div>
+              <div class="c-value">+91-9019247088</div>
+            </div>
+          </a>
+          <a href="mailto:bhuvan21pb011@gmail.com" class="contact-item" id="contact-email">
+            <div class="c-icon">&#9993;</div>
+            <div>
+              <div class="c-label">Email</div>
+              <div class="c-value">bhuvan21pb011@gmail.com</div>
+            </div>
+          </a>
+          <a href="https://www.linkedin.com/in/bhuvan-b-s-501517273" target="_blank" class="contact-item" id="contact-linkedin">
+            <div class="c-icon">&#128101;</div>
+            <div>
+              <div class="c-label">LinkedIn</div>
+              <div class="c-value">Bhuvan B S</div>
+            </div>
+          </a>
+          <a href="https://maps.google.com/?q=Bangalore,Karnataka" target="_blank" class="contact-item" id="contact-location">
+            <div class="c-icon">&#128205;</div>
+            <div>
+              <div class="c-label">Location</div>
+              <div class="c-value">Bangalore, Karnataka</div>
+            </div>
+          </a>
+        </div>
+
+        <div class="reveal" style="text-align:center;margin-top:2rem;">
+          <a href="mailto:bhuvan21pb011@gmail.com?subject=Hello%20Bhuvan%20-%20Portfolio%20Inquiry" class="btn btn-filled" id="btn-send-mail">
+            &#9993; SEND ME A MAIL
+          </a>
+        </div>
+      </section>
+    </div>
+
+  </div><!-- /page-container -->
+
+  <!-- Resume Modal -->
+  <div class="modal-overlay" id="resume-modal">
+    <div class="modal-content">
+      <button class="modal-close" onclick="closeResume()" id="btn-close-resume">&times;</button>
+      <img src="RESUME.png" alt="Bhuvan's Resume">
+      <div class="modal-actions">
+        <a href="RESUME.png" download="Bhuvan_Resume.png" class="btn btn-filled" id="btn-modal-download">
+          &#11015; DOWNLOAD RESUME
+        </a>
+        <button class="btn" onclick="closeResume()">&#10005; CLOSE</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="social-links">
+      <a href="mailto:bhuvan21pb011@gmail.com" title="Email" id="footer-email">&#9993;</a>
+      <a href="https://www.linkedin.com/in/bhuvan-b-s-501517273" target="_blank" title="LinkedIn" id="footer-linkedin">&#128101;</a>
+      <a href="tel:+919019247088" title="Phone" id="footer-phone">&#128222;</a>
+    </div>
+    <p>&copy; 2026 BHUVAN — All Systems Online</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
